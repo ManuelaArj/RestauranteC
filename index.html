@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luar Oriental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Luar Oriental <span>中</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <section id="sobre" class="section">
+        <h2>Sobre Nós <span>中</span></h2>
+        <p>Somos um restaurante especializado em culinária asiática, oferecemos pratos deliciosos
+            inspirados na cozinha chinesa, utilizamos ingredientes
+            frescos
+            e autênticos para proporcionar uma
+            experiência gastronômica única aos nossos clientes.</p>
+
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Menu</h2>
+        <div class="container">
+            <div class="menu-items">
+
+
+                <div class="menu-item">
+                    <img src="img/rolinho-primavera.jpg" alt="Rolinho Primavera">
+                    <div class="menu-item-details">
+                        <h3>Rolinho Primavera</h3>
+                        <p>Rolinho primavera com molho agridoce</p>
+                        <p>Preço: R$ 22,00</p>
+                        <div class="quantity-container">
+                            <input type="number" min="1" value="1" class="quantity-input">
+                            <button class="add-to-cart-btn" data-name="Rolinho Primavera" data-price="22.00">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/guioza.jpg" alt="Guioza" height="220px">
+                    <div class="menu-item-details">
+                        <h3>Guioza</h3>
+                        <p>Massa recheada com carne ou frutos do mar</p>
+                        <p>Preço: R$ 20,00</p>
+                        <div class="quantity-container">
+                            <input type="number" min="1" value="1" class="quantity-input">
+                            <button class="add-to-cart-btn" data-name="Guioza" data-price="22.00">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/lo-mein.webp" alt="Lo Mein" width="100px" height="220px">
+                    <div class="menu-item-details">
+                        <h3>Lo Mein</h3>
+                        <p>Massa de trigo cozido com vegetais</p>
+                        <p>Preço: R$ 35,90</p>
+                        <div class="quantity-container">
+                            <input type="number" min="1" value="1" class="quantity-input">
+                            <button class="add-to-cart-btn" data-name="Lo Mein" data-price="35.90">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="menu-items">
+                <div class="menu-item">
+                    <img src="img/frabgo xadres.jpg" alt="Frango Xadrez">
+                    <div class="menu-item-details">
+                        <h3>Frango Xadrez</h3>
+                        <p>Frango com molho especial</p>
+                        <p>Preço: R$ 25,00</p>
+                        <div class="quantity-container">
+                            <input type="number" min="1" value="1" class="quantity-input">
+                            <button class="add-to-cart-btn" data-name="Frango Xadrez" data-price="25.00">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/bolinho-de-frango-chines-.webp" alt="Bolinho Recheado" width="100px" height="220px">
+                    <div class="menu-item-details">
+                        <h3>Bolinho de Frango</h3>
+                        <p>Bolinho recheado com frango e alho</p>
+                        <p>Preço: R$ 13,90</p>
+                        <div class="quantity-container">
+                            <input type="number" min="1" value="1" class="quantity-input">
+                            <button class="add-to-cart-btn" data-name="Lo Mein" data-price="35.90">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg" alt="Chow mein"
+                        width="100px" height="220px">
+                    <div class="menu-item-details">
+                        <h3>Chow Mein</h3>
+                        <p>Macarrão frito com legumes</p>
+                        <p>Preço: R$ 21,90</p>
+                        <div class="quantity-container">
+                            <input type="number" min="1" value="1" class="quantity-input">
+                            <button class="add-to-cart-btn" data-name="Lo Mein" data-price="21.90s">Adicionar ao
+                                Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Telefone: (11) 98743-2344</p>
+            <p>Email: contato@luaroriental.com</p>
+            <p>Endereço: Rua Cruzeiro do Sul, 123 - São Miguel</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Luar Oriental</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const name = btn.dataset.name;
+                const price = parseFloat(btn.dataset.price);
+                const quantity = parseInt(btn.parentNode.querySelector('.quantity-input').value);
+                console.log(`Adicionando ao carrinho: ${quantity} x ${name} - R$ ${(price * quantity).toFixed(2)}`);
+            });
+        });
+    </script>
+</body>
+
+</html>
